@@ -13,8 +13,8 @@ Required software/hardware
 
 What's up with the code?
 ========================
-Currently this program will not work with-out Adafruit's NFC library for the arduino, additionally without the version I've edited to work with either any standard device or you can get additional functionalities using an Android powered NFC device. As of this writing there isn't a lot of devices out there so right now I will only guarentee this will work with Nexus devices, but other Android devices will probably do.
+Currently this program will not work without Adafruit's NFC library for the arduino, additionally without the version I've edited to work with.
 
-I am not going to upload the original Adafruit library for copyright reasons, and it won't work with the LEDs. But an edited version will by up called Readinglights so grab that one and make sure it's included. There's a lot of Adafruit's code in there and a chunk of my own.
+I am not going to upload the original Adafruit library for copyright reasons, and it won't work with the LEDs.
 
-BUT if you do end up getting the adafruit library and want to edit it yourself for whatever reason you have, the areas you'll focus on are the "readPassiveTargetID()" function. That's where an interupt will happen and you can loop out and start executing your own code, the function following that one hadles the encyption and data which I used for android but I left untouch for the public because you can permanently lock/format your card with the calls in that function.
+BUT if you do end up getting the adafruit library and want to edit it yourself for whatever reason, the areas you'll focus on are the "readPassiveTargetID()" function. That's where an interupt will happen and you can loop out and start executing your own code, the function following that one hadles the encyption and data which I used for android but I left untouch for the public because you can permanently lock/format your card with the calls in that function.
